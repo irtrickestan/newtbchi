@@ -36,5 +36,7 @@ cd Tabchi-Bang
 **[•channel•] (https://t.me/NoFooZiTM)**
 -
 **[•News Tabchi and help•] (https://t.me/Tabchi_Bang)**
-<img src="http://s8.picofile.com/file/8315594418/photo_%DB%B2%DB%B0%DB%B1%DB%B7_%DB%B1%DB%B2_%DB%B3%DB%B0_%DB%B2%DB%B0_%DB%B3%DB%B0_%DB%B2%DB%B5.jpg" hspace="210" width="210">
 -
+<img src="http://s8.picofile.com/file/8315594418/photo_%DB%B2%DB%B0%DB%B1%DB%B7_%DB%B1%DB%B2_%DB%B3%DB%B0_%DB%B2%DB%B0_%DB%B3%DB%B0_%DB%B2%DB%B5.jpg" hspace="210" width="210">
+---
+--
