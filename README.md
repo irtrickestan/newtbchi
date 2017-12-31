@@ -37,5 +37,5 @@ cd Tabchi-Bang
 -
 **[•News Tabchi and help•] (https://t.me/Tabchi_Bang)**
 -
-<img src="http://s8.picofile.com/file/8315594418/photo_%DB%B2%DB%B0%DB%B1%DB%B7_%DB%B1%DB%B2_%DB%B3%DB%B0_%DB%B2%DB%B0_%DB%B3%DB%B0_%DB%B2%DB%B5.jpg" hspace="250" width="250">
+<img src="http://s8.picofile.com/file/8315594418/photo_%DB%B2%DB%B0%DB%B1%DB%B7_%DB%B1%DB%B2_%DB%B3%DB%B0_%DB%B2%DB%B0_%DB%B3%DB%B0_%DB%B2%DB%B5.jpg" hspace="300" width="300">
 ---
