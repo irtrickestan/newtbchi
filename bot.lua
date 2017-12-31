@@ -657,7 +657,7 @@ function tdcli_update_callback(data)
 						from_background_ = 1
 					}, dl_cb, nil)
 				elseif text:match("^([Hh]elp)$") then
-					local txt = '<b>Tabchi orders help</b>\n\n<b>Online</b>\n<code>-help</code>\n\nhttps://t.me/TABHCI_BANG/3'
+					local txt = '<b>Tabchi orders help</b>\n\n<b>Online</b>\n<code>-help</code>\n\nhttps://t.me/TABCHI_BANG/3'
 					return send(msg.chat_id_,msg.id_, txt)
 				elseif tostring(msg.chat_id_):match("^-") then
 					if text:match("^([Ll]eave)$") then
