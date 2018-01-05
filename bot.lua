@@ -33,7 +33,7 @@ function get_bot (i, sami)
 end
 function reload(chat_id,msg_id)
 	loadfile("./bot-1.lua")()
-	send(chat_id, msg_id, "<i>با موفقیت انجام شد.</i>")
+	send(chat_id, msg_id, "<i>Успех.</i>")
 end
 function is_sami(msg)
     local var = false
@@ -482,7 +482,7 @@ function tdcli_update_callback(data)
 							end
 					end
 					return send(msg.chat_id_,msg.id_,"<i>Обновление опыта tabchi </i><code> BOT-ID </code> Успех.")
-				elseif text:match("^([Pp]anel)$") then
+				elseif text:match("^(панель)$") then
 					local s =  redis:get("botBOT-IDoffjoin") and 0 or redis:get("botBOT-IDmaxjoin") and redis:ttl("botBOT-IDmaxjoin") or 0
 					local ss = redis:get("botBOT-IDofflink") and 0 or redis:get("botBOT-IDmaxlink") and redis:ttl("botBOT-IDmaxlink") or 0
 					local msgadd = redis:get("botBOT-IDaddmsg") and "0N" or "Oᖴᖴ"
@@ -498,7 +498,7 @@ function tdcli_update_callback(data)
 					local contacts = redis:get("botBOT-IDsavecontacts") and "0N" or "Oᖴᖴ"
 					local txt = "<i>Исполнительный статус</i><code> BOT-ID</code> \n\n"..tostring(offjoin).."<code> Автоматическое членство </code>\n"..tostring(offlink).."<code> Автоподключение </code>\n"..tostring(nlink).."<code> Обнаружение членских ссылок </code>\n"..tostring(contacts).."<code>Автоматически добавлять контакты </code>\n" .. tostring(autoanswer) .."<code> Режим автоматического ответа </code>\n" .. tostring(numadd) .. "<code> Добавить контакт с номером </code>\n" .. tostring(msgadd) .. "<code>Добавить контакт с сообщением</code>\n〰〰〰ا〰〰〰\n<code> Добавить контактное сообщение :</code>\n• " .. tostring(txtadd) .. " •\n〰〰〰ا〰〰〰\n\n<code> Сохраненные ссылки : </code><b>" .. tostring(links) .. "</b>\n<code> Ссылки, ожидающие членства : </code><b>" .. tostring(glinks) .. "</b>\n   <b>" .. tostring(s) .. " </b><code> Присоединиться снова </code>\n<code> Ожидание ссылок будет подтверждено: </code><b>" .. tostring(wlinks) .. "</b>\n   <b>" .. tostring(ss) .. " </b><code> Пока подтверждение ссылки еще раз</code>\n\n Tabchi Bang By Samiyar-Bang-@NoFooZiTM"
 					return send(msg.chat_id_, 0, txt)
-				elseif text:match("^([Ss]tats)$")  then
+				elseif text:match("^(статистика)$")  then
 					local gps = redis:scard("botBOT-IDgroups")
 					local sgps = redis:scard("botBOT-IDsupergroups")
 					local usrs = redis:scard("botBOT-IDusers")
