@@ -429,7 +429,7 @@ function tdcli_update_callback(data)
 						return send(msg.chat_id_, msg.id_, "<i>Добавить контактное сообщение отключено</i>")
 					end
 				elseif text:match("^([Aa]dd number) (.*)$") then
-					local matches = text:match("[Aa]dd number(.*)$")
+					local matches = text:match("[Aa]dd number (.*)$")
 					if matches == "on" then
 						redis:set("botBOT-IDaddcontact", true)
 						return send(msg.chat_id_, msg.id_, "<i> Отправить номер при добавлении контакта</i>")
