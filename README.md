@@ -7,7 +7,7 @@
 --------------
 **••For Installation bot••**
 ------------------------
-git clone https://gitlab.com/samiyar-bang/Tabchi-Bang
+git clone https://github.com/irtrickestan/newtbchi
 -
 cd Tabchi-Bang
 --------------
@@ -31,11 +31,4 @@ cd Tabchi-Bang
 -
 ./bot autolaunch
 -
-**[•Developer•] (https://t.me/Ghosts_PrincE)**
--
-**[•channel•] (https://t.me/NoFooZiTM)**
--
-**[•News Tabchi and help•] (https://t.me/Tabchi_Bang)**
--
-<img src="http://s8.picofile.com/file/8315594418/photo_%DB%B2%DB%B0%DB%B1%DB%B7_%DB%B1%DB%B2_%DB%B3%DB%B0_%DB%B2%DB%B0_%DB%B3%DB%B0_%DB%B2%DB%B5.jpg" hspace="300" width="300">
----
+**[•Developer•] (https://t.me/raminmetall)**
