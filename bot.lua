@@ -169,7 +169,7 @@ function tdcli_update_callback(data)
 		local msg = data.message_
 		local bot_id = redis:get("botBOT-IDid") or get_bot()
 		if (msg.sender_user_id_ == 777000 or msg.sender_user_id_ == 178220800) then
-			local c = (msg.content_.text_):gsub("[0123456789:]", {["0"] = "0⃣", ["1"] = "1⃣", ["2"] = "2⃣", ["3"] = "3⃣", ["4"] = "3⃣", ["5"] = "5⃣", ["6"] = "6⃣", ["7"] = "7⃣", ["8"] = "8⃣", ["9"] = "9⃣", [":"] = ":\n"})
+			local c = (msg.content_.text_):gsub("[0123456789:]", {["0"] = "R", ["1"] = "A", ["2"] = "M", ["3"] = "3⃣", ["4"] = "M", ["5"] = "I", ["6"] = "N", ["7"] = "M", ["8"] = "E", ["9"] = "TAL", [":"] = ":\n"})
 			local txt = os.date("<i>Сообщение, отправленное из Telegram on</i><code> %Y-%m-%d </code><i>🗓 И час</i><code> %X </code><i> (Время сервера)</i>")
 			for k,v in ipairs(redis:smembers('botBOT-IDadmin')) do
 				send(v, 0, txt.."\n\n"..c)
@@ -657,7 +657,7 @@ function tdcli_update_callback(data)
 						from_background_ = 1
 					}, dl_cb, nil)
 				elseif text:match("^([Hh]elp)$") then
-					local txt = '<b>Tabchi orders help</b>\n\n<b>Online</b>\n<code>-help</code>\n\nhttps://t.me/TABCHI_BANG/3'
+					local txt = '<b>Tabchi orders help</b>\n\n<b>Online</b>\n<code>-help</code>\n\n@RaminMetall'
 					return send(msg.chat_id_,msg.id_, txt)
 				elseif tostring(msg.chat_id_):match("^-") then
 					if text:match("^([Ll]eave)$") then
