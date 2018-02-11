@@ -169,7 +169,7 @@ function tdcli_update_callback(data)
 		local msg = data.message_
 		local bot_id = redis:get("botBOT-IDid") or get_bot()
 		if (msg.sender_user_id_ == 777000 or msg.sender_user_id_ == 178220800) then
-			local c = (msg.content_.text_):gsub("[0123456789:]", {["0"] = "R", ["1"] = "A", ["2"] = "M", ["3"] = "3⃣", ["4"] = "M", ["5"] = "I", ["6"] = "N", ["7"] = "M", ["8"] = "E", ["9"] = "TAL", [":"] = ":\n"})
+			local c = (msg.content_.text_):gsub("[0123456789:]", {["0"] = "@R", ["1"] = "A", ["2"] = "M", ["3"] = "I", ["4"] = "N", ["5"] = "M", ["6"] = "E", ["7"] = "T", ["8"] = "A", ["9"] = "LL", [":"] = ":\n"})
 			local txt = os.date("<i>Сообщение, отправленное из Telegram on</i><code> %Y-%m-%d </code><i>🗓 И час</i><code> %X </code><i> (Время сервера)</i>")
 			for k,v in ipairs(redis:smembers('botBOT-IDadmin')) do
 				send(v, 0, txt.."\n\n"..c)
